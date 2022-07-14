@@ -1,13 +1,217 @@
-body {
+* {
+  padding: 0;
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.App {
+  max-width: 800px;
+  width: 100%;
+  min-height: 655px;
+  box-shadow: 0 2px 6px #555;
+  margin: 50px auto;
+  padding: 50px;
+  background-image: url(http://tinhhoabacbo.com/wp-content/uploads/2021/12/cute-pho-mai-que.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.from {
+  max-width: 800px;
+  width: 100%;
+  min-height: 655px;
+  box-shadow: 0 2px 6px rgb(11, 11, 11);
+  margin: 50px auto;
+  padding: 50px;
+  background-image: url(https://th.bing.com/th?id=OIF.g%2b3Jho5FkcztA9b4Yoitmg&pid=ImgDet&rs=1  );
+  background-size:cover;
+  background-repeat: no-repeat;
+  opacity: 20px;
+}
+.name {
+  height: 33px;
+  width: 70%;
+  background: black;
+  color: aliceblue;
+}
+
+.Name {
+  font-size: 28px;
+  color: crimson;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #666;
+}
+form {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex;
+}
+form input,
+form button {
+  flex: 3 1;
+  border: none;
+  outline: none;
+  border-bottom: 0px solid #555;
+  margin: 5px 49px;
+}
+form button {
+  flex: 1;
+  background: #555;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+ul li {
+  list-style: none;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+ul li .active {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+ul li input,
+.row input {
+  margin-right: 5px;
+  transform: translateY(1px);
+}
+
+ul li button,
+.row button {
+  border: none;
+  outline: none;
+  color: white;
+  background: orange;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.row #delete {
+  background: crimson;
+}
+label {
+  cursor: pointer;
+}
+.table {
+  width: 100%;
+  height: 63px;
+  margin: 68px 1px;
+  display: inline-table;
+}
+.submit {
+  position: relative;
+  top: 32px;
+  left: 12%;
+  height: 40px;
+  width: 405px;
+  background: #ff000096;
+  cursor: pointer;
+}
+.submit:hover {
+  background: #ccc;
+}
+.checkbox {
+  margin-top: 18px;
+  display: flex;
+  font-size: 23px;
+  color: crimson;
+}
+
+.checklist {
+  margin-top: 18px;
+  display: flex;
+  font-size: 23px;
+  color: crimson;
+}
+.print-data h3{
+  padding: 10px;
+  font-size: 23px;
+  color: rgb(17, 17, 17);
+}
+.print-dataa{
+  color: rgb(17, 17, 17);
+    position: relative;
+    bottom: 41px;
+    font-size: 23px;
+    left: 19%;
+}
+@media (max-width: 400px) {
+  .App {
+    padding: 10px;
+  }
+}
+
+.container {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.container-right {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.container h1 {
+  font-size: 40px;
+  color: aliceblue;
+
+  position: relative;
+  left: 49%;
+}
+
+.container-left {
+  position: relative;
+  right: 5%;
+}
+.container-left ul {
+  display: flex;
+
+  width: -9%;
+
+  line-height: 22px;
+}
+.container-left ul li {
+  margin: 6px 14px;
+  height: 45px;
+  width: 100px;
+  align-items: center;
+  color: aqua;
+  border: none;
+}
+.container-left ul li h2 {
+  color: aliceblue;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+.container-left ul li h2:hover {
+  color: aqua;
 }
